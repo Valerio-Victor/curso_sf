@@ -1,0 +1,57 @@
+---
+title: 'ANÁLISE FINANCEIRA DE SISTEMAS FOTOVOLTAICOS'
+subtitle: 'Curso de Extensão'
+author: 'Prof. Dr. Victor Valerio'
+institute: 'UNIVERSIDADE FEDERAL DE ITAJUBÁ'
+date: 'Última Atualização: `r format(Sys.Date(),"%d-%m-%Y")`'
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+
+library(xaringanExtra)
+
+use_scribble()
+use_search(show_icon = TRUE)
+
+```
+
+
+class: inverse
+# AGENDA 
+
+- TÓPICO 1
+
+- TÓPICO 2
+
+
+
+
+---
+class: inverse, middle, center
+# TÓPICO 1
+
+
+
+
+---
+# TÓPICO 1
+
+
+
+
+---
+class: inverse, middle, center
+# TÓPICO 2
+
+
+
+
+---
+# TÓPICO 2
