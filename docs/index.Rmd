@@ -202,8 +202,11 @@ a uma fonte complementar, consistente apenas em contextos de pequenos
 
 
 ```{r , results = 'asis', echo = F, warning = F, message = F, error = F, fig.align ='center'}
+
+
 library(magrittr)
 library(kableExtra)
+
 
 leiloes <- data.frame(
   
@@ -226,6 +229,7 @@ knitr::kable(leiloes,
                            '7º LEILÃO')) %>%
   
   kable_styling(bootstrap_options = 'striped')
+
 
 ```
 
@@ -536,7 +540,127 @@ de revisão tarifária periódica (a cada 4 ou 5 anos).
 
 ---
 <div style="text-align: justify">
+# MODALIDADES TARIFÁRIAS
+
+
+```{r , results = 'asis', echo = F, warning = F, message = F, error = F, fig.align ='center'}
+
+
+library(magrittr)
+library(kableExtra)
+
+
+hp <- data.frame(
+  concessionaria = c('CEMIG',
+                     'LIGHT',
+                     'ELETROPAULO',
+                     'ENEL',
+                     'ELEKTRO'),
+  estado = c('MG',
+             'RJ',
+             'SP',
+             'SP; RJ; GO',
+             'SP; MS'),
+  hp = c('17h às 20h',
+         '17:30H às 20:30H',
+         '17:30H às 20:30H',
+         '18h às 21h',
+         '17:30H às 20:30H'))
+
+
+knitr::kable(hp, 
+             escape = FALSE,
+             format = 'html',
+             align = c('c', 'c', 'c'),
+             col.names = c('CONCESSIONÁRIAS', 
+                           'ESTADO', 
+                           'HORÁRIO DE PONTA (HP)')) %>%
+  
+  kable_styling(bootstrap_options = 'striped')
+
+
+```
+
+### Fonte: [ANEEL](https://app.powerbi.com/view?r=eyJrIjoiMTEzZDgyMzctNGQzZS00MTVkLTg3M2UtOGMwNjBjMzM2MGVmIiwidCI6IjQwZDZmOWI4LWVjYTctNDZhMi05MmQ0LWVhNGU5YzAxNzBlMSIsImMiOjR9).
+
+
+---
+<div style="text-align: justify">
 # ASPECTOS REGULATÓRIOS
+
+
+- A **GERAÇÃO DE ENERGIA FOTOVOLTAICA** ocorre majoritariamente no 
+**POSTO TARIFÁRIO FORA DE PONTA (HFP)**. 
+
+
+```{r, results = 'asis', echo = F, warning = F, message = F, error = F, fig.align ='center', out.width = '65%'}
+
+
+knitr::include_graphics('sol_posto_tarifario.png')
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ---
 <div style="text-align: justify">
@@ -704,3 +828,7 @@ name: estudos_casos
 knitr::include_graphics('https://media.giphy.com/media/hjvinhl1pUrb1gdzlV/giphy.gif')
 ```
 
+
+.pull-left[teste1]
+
+.pull-right[teste2]
