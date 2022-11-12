@@ -1,5 +1,5 @@
 ---
-title: 'ANÁLISE FINANCEIRA DE SISTEMAS FOTOVOLTAICOS'
+title: 'ANÁLISE FINANCEIRA DE INVESTIMENTOS EM SISTEMAS FOTOVOLTAICOS'
 subtitle: 'Curso de Extensão'
 author: 'Prof. Dr. Victor Valerio'
 institute: 'UNIVERSIDADE FEDERAL DE ITAJUBÁ'
@@ -7,56 +7,428 @@ date: 'Última Atualização: `r format(Sys.Date(),"%d-%m-%Y")`'
 output:
   xaringan::moon_reader:
     lib_dir: libs
+    css: xaringan-themer.css
     nature:
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
+      ratio: 16:9
 ---
 
-```{r, echo = FALSE, warning = FALSE, message = FALSE}
+
+```{r, results = 'asis', echo = F, warning = F, message = F, error = F, fig.align ='center'}
+
 
 library(xaringanExtra)
+library(xaringanthemer)
+
+
+style_mono_accent(base_color = "#1c5253",
+                  text_font_size = '30px',
+                  header_h1_font_size = '3rem',
+                  header_h2_font_size = '2rem',
+                  header_h3_font_size = '1.5rem')
+
 
 use_scribble()
 use_search(show_icon = TRUE)
 
+
 ```
 
 
-class: inverse
 # AGENDA 
 
-- [**TÓPICO 1**](#topico_1)
+
+- [**VISÃO GERAL**](#visao_geral)
 
 
-- [**TÓPICO 2**](#topico_2)
+- [**MERCADO FOTOVOLTAICO NO BRASIL**](#mercado_fotovoltaico_brasil)
+
+
+- [**ASPECTOS REGULATÓRIOS**](#aspectos_regulatorios)
+
+
+- [**MATEMÁTICA FINANCEIRA**](#matematica_financeira)
+
+
+- [**ANÁLISE DE INVESTIMENTOS**](#analise_investimento)
+
+
+- [**ESTUDOS DE CASOS**](#estudos_casos)
+
+
+---
+class: inverse, middle, center
+name: visao_geral
+
+
+# VISÃO GERAL
+
+
+---
+<div style="text-align: justify">
+# VISÃO GERAL
+
+
+- Esta apresentação tem por **OBJETIVO GERAL** explicar como realizar uma 
+**ANÁLISE FINANCEIRA DE INVESTIMENTOS** em sistemas fotovoltaicos de maneira 
+correta e robusta.
+
+
+- Os responsáveis técnicos devem compreender que a decisão de instalação de um 
+sistema fotovoltaico é econômica. Isto é, projetos **TECNICAMENTE VIÁVEIS**
+apenas deverão ser implementados se forem **FINANCEIRAMENTE VIÁVEIS**.
+
+
+---
+<div style="text-align: justify">
+# VISÃO GERAL
+
+
+- Ao contrário do que se imagina (e se pratica!) realizar uma análise financeira 
+de investimentos em sistemas fotovoltaicos **NÃO É TAREFA FÁCIL**, visto que, 
+**CONCEITOS TÉCNICOS** devem ser **ASSOCIADOS a CONCEITOS ECONÔMICOS**.
+
+
+- Nesta edição do curso, a seção de finanças foi alterada de modo que o estudante
+seja capaz de **INTERPRETAR UMA ANÁLISE FINANCEIRA** de investimentos 
+em diversos contextos a partir de um aplicativo desenvolvido pelo professor.
+
+
+---
+<div style="text-align: justify">
+# VISÃO GERAL
+
+</br>
+
+
+- Faremos aqui um guia “passo a passo” de como utilizar o aplicativo para 
+implementar e interpretar uma análise financeira no contexto desejado. 
+A ideia é que você crie **INDEPENDÊNCIA** para elaborar as suas análises de 
+acordo com as especificidades do seu projeto. 
+
+
+---
+class: inverse, middle, center
+name: mercado_fotovoltaico_brasil
+
+
+# MERCADO FOTOVOLTAICO NO BRASIL
+
+
+---
+<div style="text-align: justify">
+# MERCADO FOTOVOLTAICO NO BRASIL
+
+
+- O Brasil possui um cenário promissor para o mercado de energia fotovoltaica.
+Como se sabe, nosso país possui vasta disponibilidade de recurso solar;
+
+  - A soma anual de irradiação global em qualquer lugar no **BRASIL** 
+  encontra-se no intervalo de **1.500 kWh/m² à 2.500 kWh/m²**.
+
+
+- Portanto, nossa irradiação é muito maior que países referência no setor;
+
+  - A soma anual de irradiação global em qualquer lugar no **ALEMANHA** 
+  encontra-se no intervalo de **900 kWh/m² à 1.250 kWh/m²**.
+
+
+---
+<div style="text-align: justify">
+# MERCADO FOTOVOLTAICO NO BRASIL
+
+
+</br>
+
+
+**MAPA**
+
+
+---
+<div style="text-align: justify">
+# MERCADO FOTOVOLTAICO NO BRASIL
+
+
+- Apesar da vasta disponibilidade do recurso solar, a indústria fotovoltaica 
+ainda é **POUCO DESENVOLVIDA** no país;
+
+
+- Este atraso na indústria nacional pode ser explicado pela **SUBUTILIZAÇÃO**
+da fonte fotovoltaica devido, por sua vez, a **FALTA DE POLÍTICAS 
+GOVERNAMENTAIS** até o início da década de 2010;
+
+
+- O entendimento até então era de que a energia solar fotovoltaica correspondia 
+a uma fonte complementar, consistente apenas em contextos de pequenos 
+**SISTEMAS ISOLADOS**.
+
+
+---
+<div style="text-align: justify">
+# MERCADO FOTOVOLTAICO NO BRASIL
+
+
+- PROGRAMAS DE INCENTIVO À UTILIZAÇÃO DE ENERGIA FOTOVOLTAICA NO BRASIL
+
+  - Chamada pública n° 13/2011 da Aneel – “Projeto Estratégico Arranjos Técnicos
+  e Comerciais para Inserção da Geração Solar Fotovoltaica na Matriz Energética 
+  Brasileira”;
+
+  - **RESULTADO**: Aproximadamente 395 milhões de reais foram investidos em 18 
+  projetos diferentes, representando uma expansão de potência instalada no Brasil 
+  próxima a 24,6 MW.
+
+
+---
+<div style="text-align: justify">
+# MERCADO FOTOVOLTAICO NO BRASIL
+
+
+- PROGRAMAS DE INCENTIVO À UTILIZAÇÃO DE ENERGIA FOTOVOLTAICA NO BRASIL
+
+  - 6º leilão de energia de reserva organizados pela ANEEL e operacionalizados 
+  pela CCEE em 31 de outubro de 2014;
+
+  - 7º leilão de energia de reserva organizados pela ANEEL e operacionalizados 
+  pela CCEE em 28 de setembro de 2015.
+
+
+---
+<div style="text-align: justify">
+# MERCADO FOTOVOLTAICO NO BRASIL
+
+
+```{r , results = 'asis', echo = F, warning = F, message = F, error = F, fig.align ='center'}
+library(magrittr)
+library(kableExtra)
+
+leiloes <- data.frame(
+  
+  resultados = c('Número de empreendimentos cadastrados',
+                 'Número de empreendimentos habilitados',
+                 'Potência nominal contratada (MW)',
+                 'Garantia física contratada (MWmédio)',
+                 'Preço inicial de venda de energia (R$/MWh)',
+                 'Preço final de venda de energia (R$/MWh)'),
+  sexto = c('400','331','889,7','202,3','262','215,1'),
+  setimo = c('382','341','833,8','232,9','349','301,8'))
+
+
+knitr::kable(leiloes, 
+             escape = FALSE,
+             format = 'html',
+             align = c('c', 'c', 'c'),
+             col.names = c('RESULTADOS', 
+                           '6º LEILÃO', 
+                           '7º LEILÃO')) %>%
+  
+  kable_styling(bootstrap_options = 'striped')
+
+```
+
+
+### Fonte: ANEEL.
+
+
+---
+<div style="text-align: justify">
+# MERCADO FOTOVOLTAICO NO BRASIL
+
+
+- Todos estes programas foram muito importantes para a inserção da fonte 
+fotovoltaica na matriz energética brasileira uma vez que:
+
+  - Geraram desenvolvimento do **MERCADO FOTOVOLTAICO** ao desenvolver toda a 
+  cadeia de produção;
+  
+  - Geraram **DESENVOLVIMENTO TÉCNICO** nos contextos acadêmicos e comerciais.
+
+---
+<div style="text-align: justify">
+# MERCADO FOTOVOLTAICO NO BRASIL
+
+
+- Contudo, o marco regulatório que efetivamente abriu o mercado de geração solar 
+fotovoltaica residencial e comercial foi definido pela publicação da **RESOLUÇÃO
+NORMATIVA Nº 482/2012** que estabelecia os parâmetros de **ACESSO**, **CONEXÃO**, 
+**SEGURANÇA** e **TARIFAÇÃO** da **GERAÇÃO DISTRIBUÍDA**;
+
+
+- Deve-se ressaltar que a Resolução Normativa n° 482/2012 não tratava apenas da 
+fonte fotovoltaica, mas da geração distribuída de pequeno porte a partir das 
+demais fontes renováveis, tais como a hidráulica (pch), a eólica, a biomassa e a 
+cogeração qualificada. 
+
+
+---
+<div style="text-align: justify">
+# MERCADO FOTOVOLTAICO NO BRASIL
+
+
+- Mesmo assim, energia solar fotovoltaica possui a maior representação na 
+geração distribuída no Brasil, visto que, corresponde à 99,62% do total de 
+conexões à rede elétrica nesta modalidade, 89,88% do total de consumidores 
+atendidos e 85,93% do total de potência nominal instalada:
+
+  - Usinas: 78.805;
+
+  - Unidades Consumidoras: 98.548;
+
+  - Potência Instalada: 820.390,18 kWp.
+
+
+- De fato, o mercado fotovoltaico apresenta um crescimento acelerado
+
+
+---
+<div style="text-align: justify">
+# MERCADO FOTOVOLTAICO NO BRASIL
+
+
+</br>
+
+**GRÁFICO**
+
+
+---
+<div style="text-align: justify">
+# MERCADO FOTOVOLTAICO NO BRASIL
+
+
+</br>
+
+**GRÁFICO**
+
+
+---
+<div style="text-align: justify">
+# MERCADO FOTOVOLTAICO NO BRASIL
+
+
+</br>
+
+**GRÁFICO**
+
+
+---
+<div style="text-align: justify">
+# MERCADO FOTOVOLTAICO NO BRASIL
+
+
+- Existem diversas formas de atuação neste mercado em expansão e, na seção de 
+estudos de caso, buscaremos avaliar a viabilidade econômica de algumas 
+transações do mercado fotovoltaico;
+
+
+- Porém, deve-se antes apresentar os principais aspectos da **Resolução 
+Normativa n° 482/2012** e de suas alterações, isto é, a **Resolução Normativa nº
+687/2015** e a **Lei nº 14.300/2022**.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 ---
 class: inverse, middle, center
-name: topico_1
-
-# TÓPICO 1
+name: aspectos_regulatorios
 
 
+# ASPECTOS REGULATÓRIOS
 
 
 ---
-# TÓPICO 1
-
-
+# ASPECTOS REGULATÓRIOS
 
 
 ---
 class: inverse, middle, center
-name: topico_2
-
-# TÓPICO 2
+name: matematica_financeira
 
 
+# MATEMÁTICA FINANCEIRA
 
 
 ---
-# TÓPICO 2
+# MATEMÁTICA FINANCEIRA
+
+
+---
+class: inverse, middle, center
+name: analise_investimento
+
+
+# ANÁLISE DE INVESTIMENTOS
+
+
+---
+# ANÁLISE DE INVESTIMENTOS
+
+
+---
+class: inverse, middle, center
+name: estudos_casos
+
+
+# ESTUDOS DE CASOS
+
+
+---
+# ESTUDOS DE CASOS
+
+
+```{r, echo = F, fig.align = 'center', fig.alt= '', out.width = '30%'}
+knitr::include_graphics('https://media.giphy.com/media/hjvinhl1pUrb1gdzlV/giphy.gif')
+```
+

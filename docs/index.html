@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>ANÁLISE FINANCEIRA DE SISTEMAS FOTOVOLTAICOS</title>
+    <title>ANÁLISE FINANCEIRA DE INVESTIMENTOS EM SISTEMAS FOTOVOLTAICOS</title>
     <meta charset="utf-8" />
     <meta name="author" content="Prof. Dr. Victor Valerio" />
     <script src="libs/header-attrs-2.14/header-attrs.js"></script>
-    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
-    <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
     <script src="libs/fabric-4.3.1/fabric.min.js"></script>
     <link href="libs/xaringanExtra-scribble-0.0.1/scribble.css" rel="stylesheet" />
     <script src="libs/xaringanExtra-scribble-0.0.1/scribble.js"></script>
@@ -15,13 +13,16 @@
     <link href="libs/xaringanExtra-search-0.0.1/search.css" rel="stylesheet" />
     <script src="libs/xaringanExtra-search-0.0.1/search.js"></script>
     <script>window.addEventListener('load', function() { window.xeSearch = new RemarkSearch({"position":"bottom-left","caseSensitive":false,"showIcon":true,"autoSearch":true}) })</script>
+    <script src="libs/kePrint-0.0.1/kePrint.js"></script>
+    <link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
   </head>
   <body>
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
 .title[
-# ANÁLISE FINANCEIRA DE SISTEMAS FOTOVOLTAICOS
+# ANÁLISE FINANCEIRA DE INVESTIMENTOS EM SISTEMAS FOTOVOLTAICOS
 ]
 .subtitle[
 ## Curso de Extensão
@@ -33,7 +34,7 @@ class: center, middle, inverse, title-slide
 ### UNIVERSIDADE FEDERAL DE ITAJUBÁ
 ]
 .date[
-### Última Atualização: 10-11-2022
+### Última Atualização: 12-11-2022
 ]
 
 ---
@@ -42,49 +43,422 @@ class: center, middle, inverse, title-slide
 
 
 
-class: inverse
+
 # AGENDA 
 
-  - [**TÓPICO 1**](#topico_1)
 
-  - [**TÓPICO 2**](#topico_2)
+- [**VISÃO GERAL**](#visao_geral)
+
+
+- [**MERCADO FOTOVOLTAICO NO BRASIL**](#mercado_fotovoltaico_brasil)
+
+
+- [**ASPECTOS REGULATÓRIOS**](#aspectos_regulatorios)
+
+
+- [**MATEMÁTICA FINANCEIRA**](#matematica_financeira)
+
+
+- [**ANÁLISE DE INVESTIMENTOS**](#analise_investimento)
+
+
+- [**ESTUDOS DE CASOS**](#estudos_casos)
+
+
+---
+class: inverse, middle, center
+name: visao_geral
+
+
+# VISÃO GERAL
+
+
+---
+&lt;div style="text-align: justify"&gt;
+# VISÃO GERAL
+
+
+- Esta apresentação tem por **OBJETIVO GERAL** explicar como realizar uma 
+**ANÁLISE FINANCEIRA DE INVESTIMENTOS** em sistemas fotovoltaicos de maneira 
+correta e robusta.
+
+
+- Os responsáveis técnicos devem compreender que a decisão de instalação de um 
+sistema fotovoltaico é econômica. Isto é, projetos **TECNICAMENTE VIÁVEIS**
+apenas deverão ser implementados se forem **FINANCEIRAMENTE VIÁVEIS**.
+
+
+---
+&lt;div style="text-align: justify"&gt;
+# VISÃO GERAL
+
+
+- Ao contrário do que se imagina (e se pratica!) realizar uma análise financeira 
+de investimentos em sistemas fotovoltaicos **NÃO É TAREFA FÁCIL**, visto que, 
+**CONCEITOS TÉCNICOS** devem ser **ASSOCIADOS a CONCEITOS ECONÔMICOS**.
+
+
+- Nesta edição do curso, a seção de finanças foi alterada de modo que o estudante
+seja capaz de **INTERPRETAR UMA ANÁLISE FINANCEIRA** de investimentos 
+em diversos contextos a partir de um aplicativo desenvolvido pelo professor.
+
+
+---
+&lt;div style="text-align: justify"&gt;
+# VISÃO GERAL
+
+&lt;/br&gt;
+
+
+- Faremos aqui um guia “passo a passo” de como utilizar o aplicativo para 
+implementar e interpretar uma análise financeira no contexto desejado. 
+A ideia é que você crie **INDEPENDÊNCIA** para elaborar as suas análises de 
+acordo com as especificidades do seu projeto. 
+
+
+---
+class: inverse, middle, center
+name: mercado_fotovoltaico_brasil
+
+
+# MERCADO FOTOVOLTAICO NO BRASIL
+
+
+---
+&lt;div style="text-align: justify"&gt;
+# MERCADO FOTOVOLTAICO NO BRASIL
+
+
+- O Brasil possui um cenário promissor para o mercado de energia fotovoltaica.
+Como se sabe, nosso país possui vasta disponibilidade de recurso solar;
+
+  - A soma anual de irradiação global em qualquer lugar no **BRASIL** 
+  encontra-se no intervalo de **1.500 kWh/m² à 2.500 kWh/m²**.
+
+
+- Portanto, nossa irradiação é muito maior que países referência no setor;
+
+  - A soma anual de irradiação global em qualquer lugar no **ALEMANHA** 
+  encontra-se no intervalo de **900 kWh/m² à 1.250 kWh/m²**.
+
+
+---
+&lt;div style="text-align: justify"&gt;
+# MERCADO FOTOVOLTAICO NO BRASIL
+
+
+&lt;/br&gt;
+
+
+**MAPA**
+
+
+---
+&lt;div style="text-align: justify"&gt;
+# MERCADO FOTOVOLTAICO NO BRASIL
+
+
+- Apesar da vasta disponibilidade do recurso solar, a indústria fotovoltaica 
+ainda é **POUCO DESENVOLVIDA** no país;
+
+
+- Este atraso na indústria nacional pode ser explicado pela **SUBUTILIZAÇÃO**
+da fonte fotovoltaica devido, por sua vez, a **FALTA DE POLÍTICAS 
+GOVERNAMENTAIS** até o início da década de 2010;
+
+
+- O entendimento até então era de que a energia solar fotovoltaica correspondia 
+a uma fonte complementar, consistente apenas em contextos de pequenos 
+**SISTEMAS ISOLADOS**.
+
+
+---
+&lt;div style="text-align: justify"&gt;
+# MERCADO FOTOVOLTAICO NO BRASIL
+
+
+- PROGRAMAS DE INCENTIVO À UTILIZAÇÃO DE ENERGIA FOTOVOLTAICA NO BRASIL
+
+  - Chamada pública n° 13/2011 da Aneel – “Projeto Estratégico Arranjos Técnicos
+  e Comerciais para Inserção da Geração Solar Fotovoltaica na Matriz Energética 
+  Brasileira”;
+
+  - **RESULTADO**: Aproximadamente 395 milhões de reais foram investidos em 18 
+  projetos diferentes, representando uma expansão de potência instalada no Brasil 
+  próxima a 24,6 MW.
+
+
+---
+&lt;div style="text-align: justify"&gt;
+# MERCADO FOTOVOLTAICO NO BRASIL
+
+
+- PROGRAMAS DE INCENTIVO À UTILIZAÇÃO DE ENERGIA FOTOVOLTAICA NO BRASIL
+
+  - 6º leilão de energia de reserva organizados pela ANEEL e operacionalizados 
+  pela CCEE em 31 de outubro de 2014;
+
+  - 7º leilão de energia de reserva organizados pela ANEEL e operacionalizados 
+  pela CCEE em 28 de setembro de 2015.
+
+
+---
+&lt;div style="text-align: justify"&gt;
+# MERCADO FOTOVOLTAICO NO BRASIL
+
+
+&lt;table class="table table-striped" style="margin-left: auto; margin-right: auto;"&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:center;"&gt; RESULTADOS &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; 6º LEILÃO &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; 7º LEILÃO &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;"&gt; Número de empreendimentos cadastrados &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 400 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 382 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;"&gt; Número de empreendimentos habilitados &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 331 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 341 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;"&gt; Potência nominal contratada (MW) &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 889,7 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 833,8 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;"&gt; Garantia física contratada (MWmédio) &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 202,3 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 232,9 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;"&gt; Preço inicial de venda de energia (R$/MWh) &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 262 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 349 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;"&gt; Preço final de venda de energia (R$/MWh) &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 215,1 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 301,8 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+### Fonte: ANEEL.
+
+
+---
+&lt;div style="text-align: justify"&gt;
+# MERCADO FOTOVOLTAICO NO BRASIL
+
+
+- Todos estes programas foram muito importantes para a inserção da fonte 
+fotovoltaica na matriz energética brasileira uma vez que:
+
+  - Geraram desenvolvimento do **MERCADO FOTOVOLTAICO** ao desenvolver toda a 
+  cadeia de produção;
+  
+  - Geraram **DESENVOLVIMENTO TÉCNICO** nos contextos acadêmicos e comerciais.
+
+---
+&lt;div style="text-align: justify"&gt;
+# MERCADO FOTOVOLTAICO NO BRASIL
+
+
+- Contudo, o marco regulatório que efetivamente abriu o mercado de geração solar 
+fotovoltaica residencial e comercial foi definido pela publicação da **RESOLUÇÃO
+NORMATIVA Nº 482/2012** que estabelecia os parâmetros de **ACESSO**, **CONEXÃO**, 
+**SEGURANÇA** e **TARIFAÇÃO** da **GERAÇÃO DISTRIBUÍDA**;
+
+
+- Deve-se ressaltar que a Resolução Normativa n° 482/2012 não tratava apenas da 
+fonte fotovoltaica, mas da geração distribuída de pequeno porte a partir das 
+demais fontes renováveis, tais como a hidráulica (pch), a eólica, a biomassa e a 
+cogeração qualificada. 
+
+
+---
+&lt;div style="text-align: justify"&gt;
+# MERCADO FOTOVOLTAICO NO BRASIL
+
+
+- Mesmo assim, energia solar fotovoltaica possui a maior representação na 
+geração distribuída no Brasil, visto que, corresponde à 99,62% do total de 
+conexões à rede elétrica nesta modalidade, 89,88% do total de consumidores 
+atendidos e 85,93% do total de potência nominal instalada:
+
+  - Usinas: 78.805;
+
+  - Unidades Consumidoras: 98.548;
+
+  - Potência Instalada: 820.390,18 kWp.
+
+
+- De fato, o mercado fotovoltaico apresenta um crescimento acelerado
+
+
+---
+&lt;div style="text-align: justify"&gt;
+# MERCADO FOTOVOLTAICO NO BRASIL
+
+
+&lt;/br&gt;
+
+**GRÁFICO**
+
+
+---
+&lt;div style="text-align: justify"&gt;
+# MERCADO FOTOVOLTAICO NO BRASIL
+
+
+&lt;/br&gt;
+
+**GRÁFICO**
+
+
+---
+&lt;div style="text-align: justify"&gt;
+# MERCADO FOTOVOLTAICO NO BRASIL
+
+
+&lt;/br&gt;
+
+**GRÁFICO**
+
+
+---
+&lt;div style="text-align: justify"&gt;
+# MERCADO FOTOVOLTAICO NO BRASIL
+
+
+- Existem diversas formas de atuação neste mercado em expansão e, na seção de 
+estudos de caso, buscaremos avaliar a viabilidade econômica de algumas 
+transações do mercado fotovoltaico;
+
+
+- Porém, deve-se antes apresentar os principais aspectos da **Resolução 
+Normativa n° 482/2012** e de suas alterações, isto é, a **Resolução Normativa nº
+687/2015** e a **Lei nº 14.300/2022**.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 ---
 class: inverse, middle, center
-name: topico_1
-
-# TÓPICO 1
+name: aspectos_regulatorios
 
 
+# ASPECTOS REGULATÓRIOS
 
 
 ---
-# TÓPICO 1
-
-
+# ASPECTOS REGULATÓRIOS
 
 
 ---
 class: inverse, middle, center
-name: topico_2
-
-# TÓPICO 2
+name: matematica_financeira
 
 
+# MATEMÁTICA FINANCEIRA
 
 
 ---
-# TÓPICO 2
+# MATEMÁTICA FINANCEIRA
+
+
+---
+class: inverse, middle, center
+name: analise_investimento
+
+
+# ANÁLISE DE INVESTIMENTOS
+
+
+---
+# ANÁLISE DE INVESTIMENTOS
+
+
+---
+class: inverse, middle, center
+name: estudos_casos
+
+
+# ESTUDOS DE CASOS
+
+
+---
+# ESTUDOS DE CASOS
+
+
+&lt;img src="https://media.giphy.com/media/hjvinhl1pUrb1gdzlV/giphy.gif" width="30%" style="display: block; margin: auto;" /&gt;
+
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
 "highlightStyle": "github",
 "highlightLines": true,
-"countIncrementalSlides": false
+"countIncrementalSlides": false,
+"ratio": "16:9"
 });
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   window.dispatchEvent(new Event('resize'));

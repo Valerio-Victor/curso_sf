@@ -35,29 +35,29 @@
   --code-font-family: 'Source Code Pro';
   --code-font-is-google: 1;
   --base-font-size: 20px;
-  --text-font-size: 1rem;
+  --text-font-size: 30px;
   --code-font-size: 0.9rem;
   --code-inline-font-size: 1em;
-  --header-h1-font-size: 2.75rem;
-  --header-h2-font-size: 2.25rem;
-  --header-h3-font-size: 1.75rem;
+  --header-h1-font-size: 3rem;
+  --header-h2-font-size: 2rem;
+  --header-h3-font-size: 1.5rem;
 
   /* Colors */
   --text-color: #272822;
-  --header-color: #43418A;
+  --header-color: #1c5253;
   --background-color: #FFFFFF;
-  --link-color: #43418A;
-  --text-bold-color: #43418A;
+  --link-color: #1c5253;
+  --text-bold-color: #1c5253;
   --code-highlight-color: rgba(255,255,0,0.5);
   --inverse-text-color: #FFFFFF;
-  --inverse-background-color: #43418A;
+  --inverse-background-color: #1c5253;
   --inverse-header-color: #FFFFFF;
-  --inverse-link-color: #43418A;
-  --title-slide-background-color: #43418A;
+  --inverse-link-color: #1c5253;
+  --title-slide-background-color: #1c5253;
   --title-slide-text-color: #FFFFFF;
-  --header-background-color: #43418A;
+  --header-background-color: #1c5253;
   --header-background-text-color: #FFFFFF;
-  --base: #43418A;
+  --base: #1c5253;
   --white: #FFFFFF;
   --black: #272822;
 }
@@ -78,7 +78,7 @@ h1, h2, h3 {
 }
 .remark-slide-content {
   background-color: var(--background-color);
-  font-size: 1rem;
+  font-size: 30px;
   padding: 16px 64px 16px 64px;
   width: 100%;
   height: 100%;
@@ -100,10 +100,10 @@ h1, h2, h3 {
 }
 .remark-inline-code {
   font-size: var(--code-inline-font-size);
-  color: #43418A;
+  color: #1c5253;
 }
 .remark-slide-number {
-  color: #43418A;
+  color: #1c5253;
   opacity: 1;
   font-size: 0.9rem;
 }
@@ -127,7 +127,7 @@ a, a > code {
 .inverse {
   background-color: var(--inverse-background-color);
   color: var(--inverse-text-color);
-
+  
 }
 .inverse h1, .inverse h2, .inverse h3 {
   color: var(--inverse-header-color);
@@ -151,10 +151,10 @@ a, a > code {
   float: left;
 }
 .left-column h2, .left-column h3 {
-  color: #43418A99;
+  color: #1c525399;
 }
 .left-column h2:last-of-type, .left-column h3:last-child {
-  color: #43418A;
+  color: #1c5253;
 }
 .right-column {
   width: 75%;
@@ -176,7 +176,7 @@ img, video, iframe {
   max-width: 100%;
 }
 blockquote {
-  border-left: solid 5px #43418A80;
+  border-left: solid 5px #1c525380;
   padding-left: 1em;
 }
 .remark-slide table {
@@ -191,7 +191,7 @@ th, td {
   padding: 5px;
 }
 .remark-slide thead, .remark-slide tfoot, .remark-slide tr:nth-child(even) {
-  background: #D9D9E7;
+  background: #D1DCDC;
 }
 table.dataTable tbody {
   background-color: var(--background-color);
@@ -201,7 +201,7 @@ table.dataTable.display tbody tr.odd {
   background-color: var(--background-color);
 }
 table.dataTable.display tbody tr.even {
-  background-color: #D9D9E7;
+  background-color: #D1DCDC;
 }
 table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
   background-color: rgba(255, 255, 255, 0.5);
