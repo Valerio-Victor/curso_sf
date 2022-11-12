@@ -26,15 +26,18 @@ use_search(show_icon = TRUE)
 class: inverse
 # AGENDA 
 
-- TÓPICO 1
+- [**TÓPICO 1**](#topico_1)
 
-- TÓPICO 2
+
+- [**TÓPICO 2**](#topico_2)
 
 
 
 
 ---
 class: inverse, middle, center
+name: topico_1
+
 # TÓPICO 1
 
 
@@ -48,6 +51,8 @@ class: inverse, middle, center
 
 ---
 class: inverse, middle, center
+name: topico_2
+
 # TÓPICO 2
 
 
