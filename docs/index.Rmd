@@ -14,6 +14,7 @@ output:
       countIncrementalSlides: false
       ratio: 16:9
 ---
+class: inverse
 
 
 ```{r, results = 'asis', echo = F, warning = F, message = F, error = F, fig.align ='center'}
@@ -40,22 +41,22 @@ use_search(show_icon = TRUE)
 # AGENDA 
 
 
-- [**VISÃO GERAL**](#visao_geral)
+- [**.white[VISÃO GERAL]**](#visao_geral)
 
 
-- [**MERCADO FOTOVOLTAICO NO BRASIL**](#mercado_fotovoltaico_brasil)
+- [**.white[MERCADO FOTOVOLTAICO NO BRASIL]**](#mercado_fotovoltaico_brasil)
 
 
-- [**ASPECTOS REGULATÓRIOS**](#aspectos_regulatorios)
+- [**.white[ASPECTOS REGULATÓRIOS]**](#aspectos_regulatorios)
 
 
-- [**MATEMÁTICA FINANCEIRA**](#matematica_financeira)
+- [**.white[MATEMÁTICA FINANCEIRA]**](#matematica_financeira)
 
 
-- [**ANÁLISE DE INVESTIMENTOS**](#analise_investimento)
+- [**.white[ANÁLISE DE INVESTIMENTOS]**](#analise_investimento)
 
 
-- [**ESTUDOS DE CASOS**](#estudos_casos)
+- [**.white[ESTUDOS DE CASOS]**](#estudos_casos)
 
 
 ---
@@ -322,9 +323,9 @@ estudos de caso, buscaremos avaliar a viabilidade econômica de algumas
 transações do mercado fotovoltaico;
 
 
-- Porém, deve-se antes apresentar os principais aspectos da **Resolução 
-Normativa n° 482/2012** e de suas alterações, isto é, a **Resolução Normativa nº
-687/2015** e a **Lei nº 14.300/2022**.
+- Porém, deve-se antes apresentar os principais aspectos da **RESOLUÇÃO NORMATIVA 
+N° 482/2012** e de suas alterações, isto é, a **RESOLUÇÃO NORMATIVA Nº
+687/2015** e a **LEI Nº 14.300/2022**.
 
 
 ---
@@ -338,6 +339,9 @@ name: aspectos_regulatorios
 ---
 <div style="text-align: justify">
 # ASPECTOS REGULATÓRIOS
+
+
+**RESOLUÇÃO NORMATIVA Nº 482/2012**
 
 
 - A Resolução Normativa n° 482/2012 normatizou os parâmetros da geração 
@@ -355,9 +359,248 @@ distribuída. No que se refere a categorização de geração, definiu-se por:
 # ASPECTOS REGULATÓRIOS
 
 
+**RESOLUÇÃO NORMATIVA Nº 482/2012**
 
 
+- **REGIME DE COMPENSAÇÃO**: sistema de compensação de energia elétrica (em inglês, 
+**_NET METERING_**). O medidor de energia registra a quantidade de 
+energia consumida e produzida, sendo apurado o saldo ao final do **MÊS**.
 
+
+---
+<div style="text-align: justify">
+# ASPECTOS REGULATÓRIOS
+
+
+**RESOLUÇÃO NORMATIVA Nº 482/2012**
+
+
+- **Art. 2 - III**: _sistema de compensação de energia elétrica: sistema no qual
+a **ENERGIA ATIVA INJETADA** por unidade consumidora com microgeração ou 
+minigeração distribuída é cedida, por meio de empréstimo gratuito, à 
+distribuidora local e posteriormente compensada com o **CONSUMO DE ENERGIA 
+ELÉTRICA ATIVA**._
+
+
+---
+<div style="text-align: justify">
+# ASPECTOS REGULATÓRIOS
+
+
+**RESOLUÇÃO NORMATIVA Nº 482/2012**
+
+
+- REGIME DE COMPENSAÇÃO:
+
+  - $Quantidade \ Consumida > Quantidade \ Produzida \implies$ 
+  $Pagamento = Quantidade \ Consumida - Quantidade \ Produzida$
+
+  - $Quantidade \ Produzida > Quantidade \ Consumida \implies$
+  $Crédito = Quantidade \ Produzida - Quantidade \ Consumida$
+
+
+- **OBSERVAÇÃO**: Em caso de saldo positivo (geração de créditos de 
+energia a ser compensado), estipulou-se um prazo de **36 MESES** para utilização. 
+
+
+---
+<div style="text-align: justify">
+# ASPECTOS REGULATÓRIOS
+
+
+**RESOLUÇÃO NORMATIVA Nº 482/2012**
+
+
+- **REGIME DE COMPENSAÇÃO**: Independente do saldo entre as quantidades consumidas 
+e produzidas por uma unidade consumidora que possui um sistema fotovoltaico 
+instalado, estabeleceu-se um mínimo a ser pago e, de acordo com a modalidade 
+tarifária, estabeleceu-se um fator de ajuste de acordo com o posto tarifário. 
+
+
+---
+<div style="text-align: justify">
+# ASPECTOS REGULATÓRIOS
+
+
+**RESOLUÇÃO NORMATIVA Nº 482/2012**
+
+
+- **Art. 7 - III**: _No faturamento de unidade consumidora integrante do 
+sistema de compensação de energia elétrica deverão ser observados os seguintes 
+procedimentos: deverá ser cobrado, no mínimo, o valor referente ao **CUSTO DE 
+DISPONIBILIDADE** para o consumidor do **GRUPO B**, ou da **DEMANDA 
+CONTRATADA** para o consumidor do **GRUPO A**, conforme o caso._
+
+
+---
+<div style="text-align: justify">
+# ASPECTOS REGULATÓRIOS
+
+
+**RESOLUÇÃO NORMATIVA Nº 482/2012**
+
+
+- **Art. 7 - XI**: _em cada unidade consumidora participante do sistema de 
+compensação de energia elétrica, a compensação deve se dar **PRIMEIRAMENTE NO
+POSTO TARIFÁRIO EM QUE OCORREU A GERAÇÃO E, POSTERIORMENTE, NOS DEMAIS POSTOS 
+TARIFÁRIOS**, devendo ser observada a relação dos valores das 
+**TARIFAS DE ENERGIA – TE (R$/MWh)**, publicadas nas Resoluções Homologatórias 
+que aprovam os processos tarifários, se houver._
+
+
+---
+class: inverse
+<div style="text-align: justify">
+# MODALIDADES TARIFÁRIAS 
+
+- **.white[CONSUMO]**: Corresponde a quantidade de 
+**.white[ENERGIA CONSUMIDA NO TEMPO]**. Por exemplo, se uma lâmpada de 60W 
+permanece ligada por 4 horas, ela consumirá 240Wh;
+
+- **.white[DEMANDA]**: Corresponde a **.white[POTÊNCIA INSTANTÂNEA DEMANDADA]** 
+por um equipamento ou conjunto de equipamentos como no caso de uma unidade 
+consumidora. Por exemplo, a lâmpada do exemplo anterior demanda 60W de potência 
+enquanto está ligada. Duas lâmpadas de 60W demandam 120W de potência enquanto 
+ligadas.
+
+
+---
+class: inverse
+<div style="text-align: justify">
+# MODALIDADES TARIFÁRIAS 
+
+
+- **.white[GRUPO B - BAIXA TENSÃO]**: Correspondem aos consumidores atendidos 
+em baixa tensão. Em geral, residências (ou edfícios residenciais), pequenos 
+comércios.
+
+  - **.white[CONVENCIONAL MONÔMIA]**: Tarifa única de consumo de energia elétrica, 
+  independentemente das horas de utilização do dia. 
+
+
+---
+class: inverse
+<div style="text-align: justify">
+# MODALIDADES TARIFÁRIAS 
+
+
+- **.white[CUSTO DE DISPONIBILIDADE]**: representa um pagamento mínimo cobrado 
+pela concessionária ("referente ao custo de disponibilidade de acesso à rede");
+
+  - Padrão monofásico: No mínimo deve-se pagar 30 kWh
+  
+  - Padrão Bifásico: No mínimo deve-se pagar 50 kWh
+  
+  - Padrão Trifásico: No mínimo deve-se pagar 100 kWh.
+
+
+---
+class: inverse
+<div style="text-align: justify">
+# MODALIDADES TARIFÁRIAS 
+
+
+- **.white[GRUPO A - ALTA TENSÃO]**: Correspondem aos consumidores atendidos em 
+alta tensão. Empresas de médio ou grande porte como supermercados, indústrias, 
+hospitais e/ou shoppings.
+
+  - **.white[TARIFA VERDE]**: modalidade caracterizada por tarifas diferenciadas 
+  de consumo de energia elétrica de acordo com as horas de utilização do dia
+  **.white["POSTO TARIFÁRIO"]**, e uma única tarifa de demanda de potência.
+  
+  - **.white[TARIFA AZUL]**: modalidade caracterizada portarifas diferenciadas 
+  de consumo e de demanda de acordo com o horário de utilização da energia no 
+  dia **.white["POSTO TARIFÁRIO"]**.
+
+
+---
+class: inverse
+<div style="text-align: justify">
+# MODALIDADES TARIFÁRIAS
+
+
+- **.white[DEMANDA CONTRATADA]**: Estabelecida em contrato junto à 
+concessionária e a partir do estudo da carga da unidade consumidora 
+**.white[CUSD - CONTRATO DE USO DO SISTEMA DE DISTRIBUIÇÃO]**.
+
+
+- **.white[POSTO TARIFÁRIO]**: São definidos por distribuidora, no seu processo 
+de revisão tarifária periódica (a cada 4 ou 5 anos).
+
+  - **.white[HORÁRIO DE PONTA (HP)]**: Período diário de 3h consecutivas, com 
+  exceção feita aos sábados, domingos e feriados nacionais.
+  
+  - **.white[HORÁRIO FORA DE PONTA (HFP)]**: Período diário composto pelas horas 
+  consecutivas e complementares ao horário de ponta.
+
+
+---
+<div style="text-align: justify">
+# ASPECTOS REGULATÓRIOS
+
+---
+<div style="text-align: justify">
+# ASPECTOS REGULATÓRIOS
+
+---
+<div style="text-align: justify">
+# ASPECTOS REGULATÓRIOS
+
+---
+<div style="text-align: justify">
+# ASPECTOS REGULATÓRIOS
+
+---
+<div style="text-align: justify">
+# ASPECTOS REGULATÓRIOS
+
+---
+<div style="text-align: justify">
+# ASPECTOS REGULATÓRIOS
+
+---
+<div style="text-align: justify">
+# ASPECTOS REGULATÓRIOS
+
+---
+<div style="text-align: justify">
+# ASPECTOS REGULATÓRIOS
+
+---
+<div style="text-align: justify">
+# ASPECTOS REGULATÓRIOS
+
+---
+<div style="text-align: justify">
+# ASPECTOS REGULATÓRIOS
+
+---
+<div style="text-align: justify">
+# ASPECTOS REGULATÓRIOS
+
+---
+<div style="text-align: justify">
+# ASPECTOS REGULATÓRIOS
+
+---
+<div style="text-align: justify">
+# ASPECTOS REGULATÓRIOS
+
+---
+<div style="text-align: justify">
+# ASPECTOS REGULATÓRIOS
+
+---
+<div style="text-align: justify">
+# ASPECTOS REGULATÓRIOS
+
+---
+<div style="text-align: justify">
+# ASPECTOS REGULATÓRIOS
+
+---
+<div style="text-align: justify">
+# ASPECTOS REGULATÓRIOS
 
 
 
