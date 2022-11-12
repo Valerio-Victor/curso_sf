@@ -327,59 +327,6 @@ Normativa n° 482/2012** e de suas alterações, isto é, a **Resolução Normat
 687/2015** e a **Lei nº 14.300/2022**.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 class: inverse, middle, center
 name: aspectos_regulatorios
@@ -389,7 +336,89 @@ name: aspectos_regulatorios
 
 
 ---
+<div style="text-align: justify">
 # ASPECTOS REGULATÓRIOS
+
+
+- A Resolução Normativa n° 482/2012 normatizou os parâmetros da geração 
+distribuída. No que se refere a categorização de geração, definiu-se por:
+
+  - **MICROGERAÇÃO**: sistemas geradores com potência nominal instalada de até 
+  **100 kW**;
+
+  - **MINIGERAÇÃO**: sistemas geradores com potência nominal instalada entre 
+  **100 kW e 1 MW**.
+
+
+---
+<div style="text-align: justify">
+# ASPECTOS REGULATÓRIOS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ---
