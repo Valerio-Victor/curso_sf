@@ -897,6 +897,19 @@ knitr::include_graphics('quadro_resumo.png')
 ```
 
 
+---
+<div style="text-align: justify">
+# ASPECTOS REGULATÓRIOS
+
+
+```{r, results = 'asis', echo = F, warning = F, message = F, error = F, fig.align ='center', out.width = '100%'}
+
+
+knitr::include_graphics('quadro_resumo.png')
+
+
+```
+
 
 
 
