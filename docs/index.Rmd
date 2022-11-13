@@ -14,7 +14,6 @@ output:
       countIncrementalSlides: false
       ratio: 16:9
 ---
-class: inverse
 
 
 ```{r, results = 'asis', echo = F, warning = F, message = F, error = F, fig.align ='center'}
@@ -37,7 +36,20 @@ use_search(show_icon = TRUE)
 
 ```
 
+# DESAFIO DO DIA
 
+
+```{r, results = 'asis', echo = F, warning = F, message = F, error = F, fig.align ='center', out.width = '100%'}
+
+
+knitr::include_graphics('nosso_curso.png')
+
+
+```
+
+
+---
+class: inverse
 # AGENDA 
 
 
@@ -101,13 +113,15 @@ em diversos contextos a partir de um aplicativo desenvolvido pelo professor.
 <div style="text-align: justify">
 # VISÃO GERAL
 
-</br>
+
+- Faremos aqui um guia “passo a passo” de como estruturar uma planilha para 
+realizar a análise financeira no contexto desejado (a interpretação da análise 
+também é ensinada). A ideia é que você crie **INDEPENDÊNCIA** para elaborar as 
+suas análises de acordo com as especificidades do projeto. 
 
 
-- Faremos aqui um guia “passo a passo” de como utilizar o aplicativo para 
-implementar e interpretar uma análise financeira no contexto desejado. 
-A ideia é que você crie **INDEPENDÊNCIA** para elaborar as suas análises de 
-acordo com as especificidades do seu projeto. 
+- **FIQUE ATENTO** quando o **TEXTO APARECER EM NEGRITO**, isto significa que o 
+conceito apresentado é muito importante para a **AVALIAÇÃO ECONÔMICA**.
 
 
 ---
@@ -137,14 +151,18 @@ Como se sabe, nosso país possui vasta disponibilidade de recurso solar;
 
 
 ---
+name: mapa_recurso_solar
 <div style="text-align: justify">
 # MERCADO FOTOVOLTAICO NO BRASIL
 
 
-</br>
+```{r, results = 'asis', echo = F, warning = F, message = F, error = F, fig.align ='center', out.width = '40%'}
 
 
-**MAPA**
+knitr::include_graphics('mapa_recurso_solar.png')
+
+
+```
 
 
 ---
@@ -589,6 +607,9 @@ knitr::kable(hp,
 # ASPECTOS REGULATÓRIOS
 
 
+**RESOLUÇÃO NORMATIVA Nº 482/2012**
+
+
 - A **GERAÇÃO DE ENERGIA FOTOVOLTAICA** ocorre majoritariamente no 
 **POSTO TARIFÁRIO FORA DE PONTA (HFP)**. 
 
@@ -619,6 +640,26 @@ knitr::include_graphics('fator_de_ajuste.png')
 ---
 <div style="text-align: justify">
 # ASPECTOS REGULATÓRIOS
+
+
+- Composição da Tarifa:
+
+
+```{r, results = 'asis', echo = F, warning = F, message = F, error = F, fig.align ='center', out.width = '70%'}
+
+
+knitr::include_graphics('tarifa.png')
+
+
+```
+
+
+---
+<div style="text-align: justify">
+# ASPECTOS REGULATÓRIOS
+
+
+**RESOLUÇÃO NORMATIVA Nº 482/2012**
 
 
 - Este **FATOR DE AJUSTE**, presente nas instalações em alta tensão, acaba por 
@@ -787,169 +828,156 @@ distribuída é anterior à REN 687/2015. Isto significa que as novas modalidade
 de geração distribuída permaneceram no convênio 6/2013. 
 
 
+---
+<div style="text-align: justify">
+# ASPECTOS REGULATÓRIOS
 
 
+- Assim como já descrito, para atender às revisões regulamentares trienais, em 
+2019 foram iniciadas as chamadas públicas para alteração da norma.
 
 
+- No centro da discussão, **O REGIME DE COMPENSAÇÃO**: o crescimento acelerado 
+observado no número de instalações e de unidades consumidoras atendidas impunha 
+**REDUÇÕES SIGNIFICATIVAS** nas receitas das distribuidoras (falta de 
+remuneração aos investimentos realizados na infraestrutura elétrica). 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  - **EFEITO "ROBIN HOOD" ÀS AVESSAS**: A geração distribuída implica no aumento 
+  da tarifa de energia paga, principalmente, pela população de baixa renda.
 
 
 ---
 <div style="text-align: justify">
 # ASPECTOS REGULATÓRIOS
 
----
-<div style="text-align: justify">
-# ASPECTOS REGULATÓRIOS
 
----
-<div style="text-align: justify">
-# ASPECTOS REGULATÓRIOS
+- Quais componentes da Tarifa de Energia devem ser compensados?
 
----
-<div style="text-align: justify">
-# ASPECTOS REGULATÓRIOS
 
----
-<div style="text-align: justify">
-# ASPECTOS REGULATÓRIOS
+```{r, results = 'asis', echo = F, warning = F, message = F, error = F, fig.align ='center', out.width = '70%'}
 
 
+knitr::include_graphics('tarifa_compensacao.png')
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
----
-class: inverse, middle, center
-name: matematica_financeira
-
-
-# MATEMÁTICA FINANCEIRA
-
-
----
-# MATEMÁTICA FINANCEIRA
-
-
----
-class: inverse, middle, center
-name: analise_investimento
-
-
-# ANÁLISE DE INVESTIMENTOS
-
-
----
-# ANÁLISE DE INVESTIMENTOS
-
-
----
-class: inverse, middle, center
-name: estudos_casos
-
-
-# ESTUDOS DE CASOS
-
-
----
-# ESTUDOS DE CASOS
-
-
-```{r, echo = F, fig.align = 'center', fig.alt= '', out.width = '30%'}
-knitr::include_graphics('https://media.giphy.com/media/hjvinhl1pUrb1gdzlV/giphy.gif')
 ```
 
 
-.pull-left[teste1]
+---
+<div style="text-align: justify">
+# ASPECTOS REGULATÓRIOS
 
-.pull-right[teste2]
+
+- Como resultado das discussões (ANEEL + Distribuidoras _versus_ Integradores), 
+pode-se observar a necessidade do estabelecimento de um marco legal para a micro
+e mini geração distribuída. Assim, a questão foi enviada para plenário por meio 
+do projeto de lei 5.829/2019 que culminou na **LEI Nº 14.300 DE 6 DE JANEIRO DE
+2022**.
+
+
+- Mesmo com as modificações impostas no regime de compensação, a promulgação da
+lei foi muito importante para o setor ao propiciar **SEGURANÇA JURÍDICA E 
+ESTABILIDADE REGULATÓRIA** para os projetos futuros e **MANUTENÇÃO DOS DIREITOS 
+ADQUIRIDOS** para os investimentos realizados. 
+
+
+---
+<div style="text-align: justify">
+# ASPECTOS REGULATÓRIOS
+
+
+- FASES CRIADAS A PARTIR DA LEI Nº 14.300/2022:
+
+  - **FASE 1 - PERÍODO DE VACÂNCIA**: Manutenção do regime de compensação 
+  (direito adquirido) para os projetos com parecer de acesso aprovado até 12 
+  meses da data de publicação da lei (mais prazo de construção - 120 dias para 
+  micro e 12 meses para mini);
+  
+  - **FASE 2 - PERÍODO DE TRANSIÇÃO**: Entre o 13º mês e o 18º mês da data de
+  publicação da lei é imposta uma regra de transição do regime de compensação.
+  
+
+---
+<div style="text-align: justify">
+# ASPECTOS REGULATÓRIOS
+
+
+- FASES CRIADAS A PARTIR DA LEI Nº 14.300/2022:
+  
+  - **FASE 3 - PERÍODO DE FINALIZAÇÃO**: O conselho Nacional de Política 
+  Energética (CNPE) deverá entregar até o 18º mês da data de publicação da lei
+  uma análise do impacto da geração distribuída que será utilizada como diretriz
+  para que a ANEEL possa implementar a alteração final do regime de compensação.
+  Este relatório deverá avaliar o impacto da geração distribuída nos fatores de
+  **GERAÇÃO DE ENERGIA**, **REDES DE TRANSMISSÃO**, **REDES DE DISTRIBUIÇÃO**,
+  **PERDAS** e **SINAL LOCACIONAL**.
+  
+
+---
+<div style="text-align: justify">
+# ASPECTOS REGULATÓRIOS
+
+
+```{r, results = 'asis', echo = F, warning = F, message = F, error = F, fig.align ='center', out.width = '100%'}
+
+
+knitr::include_graphics('quadro_resumo.png')
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
