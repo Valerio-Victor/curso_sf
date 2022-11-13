@@ -602,63 +602,138 @@ knitr::include_graphics('sol_posto_tarifario.png')
 ```
 
 
+---
+<div style="text-align: justify">
+# ASPECTOS REGULATÓRIOS
 
 
+```{r, results = 'asis', echo = F, warning = F, message = F, error = F, fig.align ='center', out.width = '70%'}
 
 
+knitr::include_graphics('fator_de_ajuste.png')
 
 
+```
 
 
+---
+<div style="text-align: justify">
+# ASPECTOS REGULATÓRIOS
 
 
+- Este **FATOR DE AJUSTE**, presente nas instalações em alta tensão, acaba por 
+aumentar o dimendionamento para atender um determinado nível de consumo no 
+horário de ponta. Deste modo, o valor do **INVESTIMENTO TAMBÉM AUMENTA**, 
+**PREJUDICANDO O RESULTADO FINANCEIRO DO EMPREENDIMENTO**.
 
 
+---
+<div style="text-align: justify">
+# ASPECTOS REGULATÓRIOS
 
 
+- Devido a intensa expansão de instalações fotovoltaicos conectados à rede, 
+a ANEEL alterou os parâmetros supracitados a partir da publicação da **RESOLUÇÃO 
+NORMATIVA Nº 687/2015**;
 
 
+- Acrescenta-se que, de fato, as revisões regulamentares já eram previstas para
+cada triênio.
 
 
+---
+<div style="text-align: justify">
+# ASPECTOS REGULATÓRIOS
 
 
+**RESOLUÇÃO NORMATIVA Nº 687/2015**
+  
+  
+- As principais diferenças foram nas próprias categorias:
+
+  - **MICROGERAÇÃO**: sistemas geradores com potência nominal instalada de até 
+  **75 kW**;
+
+  - **MINIGERAÇÃO**: sistemas geradores com potência nominal instalada entre 
+  **75 kW e 5 MW**.
 
 
+---
+<div style="text-align: justify">
+# ASPECTOS REGULATÓRIOS
 
 
+**RESOLUÇÃO NORMATIVA Nº 687/2015**
 
 
+- Quanto ao sistema de compensação de energia elétrica, a 
+**RESOLUÇÃO NORMATIVA Nº 687/2015** expandiu o prazo de 
+**UTILIZAÇÃO DOS CRÉDITOS** de energia de 36 meses para até **60 MESES**;
 
 
+- A **RESOLUÇÃO NORMATIVA Nº 687/2015** estabeleceu ainda, além da **GERAÇÃO NA 
+PRÓPRIA UNIDADE (GPU)** já estabelecida pela resolução normativa nº 482/2012, a 
+possibilidade de compensação dos créditos de determinada unidade de geração 
+distribuída em outras unidades de consumo, para tanto, três definições de 
+modalidades. 
 
 
+---
+<div style="text-align: justify">
+# ASPECTOS REGULATÓRIOS
 
 
+**RESOLUÇÃO NORMATIVA Nº 687/2015**
 
 
+ - **AUTOCONSUMO REMOTO (AR)**: Consumidores de mesma titularidade, Pessoa 
+ física ou jurídica (matriz e filial), abastecidos pela mesma concessionária 
+ distribuidora, tal que a unidade consumidora com mini ou microgeração 
+ distribuída se situa em local diferente das unidades consumidoras a serem 
+ compensados os créditos.
 
 
+---
+<div style="text-align: justify">
+# ASPECTOS REGULATÓRIOS
 
 
+**RESOLUÇÃO NORMATIVA Nº 687/2015**
 
 
+- **GERAÇÃO COMPARTILHADA (GC)**: Consumidores com Cadastro de Pessoa Física 
+(CPF) e/ou Cadastro Nacional de Pessoa Jurídica (CNPJ) distintos associados por 
+cooperativa, ou consórcio, abastecidos pela mesma concessionária distribuidora, 
+tal que a unidade consumidora com mini ou microgeração distribuída se situa em 
+local diferente das unidades consumidoras a serem compensados os créditos.
 
 
+---
+<div style="text-align: justify">
+# ASPECTOS REGULATÓRIOS
 
 
+**RESOLUÇÃO NORMATIVA Nº 687/2015**
 
 
+- **MÚLTIPLAS UNIDADES CONSUMIDORAS (MUC)**: Consumidores localizados em 
+condomínios verticais e/ou horizontais localizados na mesma área da a unidade 
+consumidora com mini ou microgeração distribuída, tal que os créditos são 
+compensados proporcionalmente nas unidades consumidoras individualizadas e nas 
+unidades consumidoras comuns.
 
 
+---
+<div style="text-align: justify">
+# ASPECTOS REGULATÓRIOS
 
 
-
-
-
-
-
-
-
+- Em relação aos **TRIBUTOS**, a **RECEITA FEDERAL** e as **SECRETARIAS DA 
+FAZENDA ESTADUAIS** adequaram as cobranças dos respectivos tributos federais 
+(Programa de Integração Social, **PIS**, e Contribuição para Financiamento da 
+Seguridade Social, **COFINS**) e estaduais (Imposto sobre Circulação de Mercadorias 
+e Serviços – **ICMS**) às unidades consumidoras com microgeração ou minigeração 
+distribuída.
 
 
 
@@ -666,45 +741,91 @@ knitr::include_graphics('sol_posto_tarifario.png')
 <div style="text-align: justify">
 # ASPECTOS REGULATÓRIOS
 
----
-<div style="text-align: justify">
-# ASPECTOS REGULATÓRIOS
+
+- **PIS/COFINS**: A primeira normativa para o contexto da geração distribuída 
+ocorreu apenas em 2015, a partir da Lei nº 13.169/2015 que instituiu como base 
+de incidência do PIS e COFINS a diferença positiva entre a energia consumida e 
+a energia produzida pela unidade consumidora com microgeração ou minigeração 
+distribuída;
+
 
 ---
 <div style="text-align: justify">
 # ASPECTOS REGULATÓRIOS
 
----
-<div style="text-align: justify">
-# ASPECTOS REGULATÓRIOS
+
+- **ICMS**: A primeira normativa para o contexto da geração distribuída ocorreu 
+em 2013 quando o Conselho Nacional de Política Fazendária (CONFAZ) publicou o 
+convênio ICMS 6/2013 que instituía como base de incidência do ICMS toda a 
+quantidade de energia consumida, independentemente da produção de energia da 
+unidade consumidora com microgeração ou minigeração distribuída. 
+
 
 ---
 <div style="text-align: justify">
 # ASPECTOS REGULATÓRIOS
 
----
-<div style="text-align: justify">
-# ASPECTOS REGULATÓRIOS
+- Porém, em 2014 o CONFAZ revogou o convênio 6/2013 ao publicar o convênio 
+16/2015 que instituiu como base de incidência de ICMS a diferença entre a 
+energia consumida e a energia produzida pela unidade consumidora com 
+microgeração ou minigeração distribuída. 
+
+- Por se tratar de um convênio (não obrigatoriedade de adesão), ao todo 5 
+estados permaneceram no convênio 6/2013, Santa Catarina, Paraná, Espírito Santo, 
+Amazonas e Amapá.
+
 
 ---
 <div style="text-align: justify">
 # ASPECTOS REGULATÓRIOS
 
----
-<div style="text-align: justify">
-# ASPECTOS REGULATÓRIOS
 
----
-<div style="text-align: justify">
-# ASPECTOS REGULATÓRIOS
+- A um ponto de destaque a ser analisado, em 2014 o CONFAZ o convênio 16/2015 que
+instituiu como base de incidência de ICMS a diferença entre a energia consumida 
+e a energia produzida pela unidade consumidora com microgeração ou minigeração 
+distribuída é anterior à REN 687/2015. Isto significa que as novas modalidades 
+de geração distribuída permaneceram no convênio 6/2013. 
 
----
-<div style="text-align: justify">
-# ASPECTOS REGULATÓRIOS
 
----
-<div style="text-align: justify">
-# ASPECTOS REGULATÓRIOS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ---
 <div style="text-align: justify">
